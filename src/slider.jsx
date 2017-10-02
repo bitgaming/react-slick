@@ -6,8 +6,9 @@ import assign from 'object-assign';
 import json2mq from 'json2mq';
 import ResponsiveMixin from 'react-responsive-mixin';
 import defaultProps from './default-props';
+import createReactClass from 'create-react-class';
 
-var Slider = React.createClass({
+var Slider = createReactClass({
   mixins: [ResponsiveMixin],
   getInitialState: function () {
     return {

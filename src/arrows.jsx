@@ -2,8 +2,9 @@
 
 import React from 'react';
 import classnames from 'classnames';
+import createReactClass from 'create-react-class';
 
-export var PrevArrow = React.createClass({
+export var PrevArrow = createReactClass({
 
   clickHandler: function (options, e) {
     e.preventDefault();
@@ -39,7 +40,7 @@ export var PrevArrow = React.createClass({
 });
 
 
-export var NextArrow = React.createClass({
+export var NextArrow = createReactClass({
   clickHandler: function (options, e) {
     e.preventDefault();
     this.props.clickHandler(options, e);
